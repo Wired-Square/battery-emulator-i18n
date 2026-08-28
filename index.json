@@ -1,3 +1,6 @@
 {
-  "languages": []
+  "languages": [
+    { "code": "de", "name": "Deutsch", "path": "packs/de.json" },
+    { "code": "sv", "name": "Svenska", "path": "packs/sv.json" }
+  ]
 }

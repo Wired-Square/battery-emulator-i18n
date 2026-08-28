@@ -32,6 +32,20 @@ that has already cached a pack keeps working offline.
 
 A pack is a flat object of `key: string`, with exactly the keys used in `template/en.json`.
 
+## Status of the packs here
+
+**`de` and `sv` are unreviewed demonstration translations and are not fit for production use.**
+They were machine-authored to exercise the download mechanism, and nobody who speaks the language
+has checked them.
+
+They deliberately cover only the interface's own vocabulary — navigation, buttons, card titles, row
+labels, category tabs and time formats. Everything the *device* says about itself is left in
+English and falls back to it: the 137 event and fault messages, the settings field labels, the live
+control labels and the apply errors. That line is drawn where a mistranslation stops being
+cosmetic and starts misreporting the state of a battery.
+
+A real pack needs a named human owner before it replaces these.
+
 ## Adding a language
 
 1. Copy `template/en.json` to `packs/<code>.json`.

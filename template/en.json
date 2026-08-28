@@ -424,6 +424,8 @@
  "ui.language_downloadable": "{} (download)",
  "ui.language_downloading": "Downloading…",
  "ui.language_index_failed": "Could not reach the translation index. The device itself needs no internet — this browser does, once per language.",
+ "ui.language_none_offered": "No further languages are published yet.",
+ "ui.language_offered": "{} more available — choose one to install it.",
  "ui.legacy_ui": "Legacy UI",
  "ui.live": "Live",
  "ui.live_controls_note": "These controls apply immediately — no reboot required.",
