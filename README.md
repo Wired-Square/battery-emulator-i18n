@@ -34,17 +34,17 @@ A pack is a flat object of `key: string`, with exactly the keys used in `templat
 
 ## Status of the packs here
 
-**`de` and `sv` are unreviewed demonstration translations and are not fit for production use.**
-They were machine-authored to exercise the download mechanism, and nobody who speaks the language
-has checked them.
+**Every pack in this repository is an unreviewed demonstration translation and is not fit for
+production use.** They were machine-authored to exercise the download mechanism, and nobody who
+speaks the language has checked them.
 
 They deliberately cover only the interface's own vocabulary — navigation, buttons, card titles, row
 labels, category tabs and time formats. Everything the *device* says about itself is left in
-English and falls back to it: the 137 event and fault messages, the settings field labels, the live
+English and falls back to it: the event and fault messages, the settings field labels, the live
 control labels and the apply errors. That line is drawn where a mistranslation stops being
 cosmetic and starts misreporting the state of a battery.
 
-A real pack needs a named human owner before it replaces these.
+Each pack needs a named human owner before it should be trusted.
 
 ## Adding a language
 
