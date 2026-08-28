@@ -15,15 +15,20 @@ that has already cached a pack keeps working offline.
 | `packs/<code>.json` | One language pack. |
 | `template/en.json` | English source text. Translate from this; never edit it by hand. |
 
-`index.json`:
+`index.json` is generated — run `python3 tools/build_index.py` after changing any pack:
 
 ```json
 {
+  "revision": "67d6407a9148",
   "languages": [
     { "code": "sv", "name": "Svenska", "path": "packs/sv.json" }
   ]
 }
 ```
+
+`revision` is a hash of every pack's bytes. Clients store it and re-pull all packs
+only when it changes, so editing a translation is enough to push it out — nobody
+has to remember to bump a version.
 
 - `code` is the language tag the UI stores as the reader's choice.
 - `name` is the language's own name for itself — `Deutsch`, not `German`. It is what the picker
@@ -38,11 +43,10 @@ A pack is a flat object of `key: string`, with exactly the keys used in `templat
 production use.** They were machine-authored to exercise the download mechanism, and nobody who
 speaks the language has checked them.
 
-They deliberately cover only the interface's own vocabulary — navigation, buttons, card titles, row
-labels, category tabs and time formats. Everything the *device* says about itself is left in
-English and falls back to it: the event and fault messages, the settings field labels, the live
-control labels and the apply errors. That line is drawn where a mistranslation stops being
-cosmetic and starts misreporting the state of a battery.
+They cover the whole interface — navigation, buttons, card titles, row labels, settings field
+labels, live control labels, help text and apply errors. **The 137 event and fault messages are
+deliberately left in English** and fall back to it, because that is where a mistranslation stops
+being cosmetic and starts misreporting the state of a battery.
 
 Each pack needs a named human owner before it should be trusted.
 
@@ -50,8 +54,9 @@ Each pack needs a named human owner before it should be trusted.
 
 1. Copy `template/en.json` to `packs/<code>.json`.
 2. Translate the values. Leave the keys alone.
-3. Add an entry to `index.json`.
-4. Open a pull request.
+3. Add the language's endonym to `NAMES` in `tools/build_index.py`.
+4. Run `python3 tools/build_index.py`.
+5. Open a pull request.
 
 Keys you leave out fall back to English, so a partial translation is usable and safe to submit.
 

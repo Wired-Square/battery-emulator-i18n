@@ -1,15 +1,60 @@
 {
+  "revision": "830094012cde",
   "languages": [
-    { "code": "da",      "name": "Dansk",      "path": "packs/da.json" },
-    { "code": "de",      "name": "Deutsch",    "path": "packs/de.json" },
-    { "code": "es",      "name": "Español",    "path": "packs/es.json" },
-    { "code": "fr",      "name": "Français",   "path": "packs/fr.json" },
-    { "code": "hu",      "name": "Magyar",     "path": "packs/hu.json" },
-    { "code": "nl",      "name": "Nederlands", "path": "packs/nl.json" },
-    { "code": "pt",      "name": "Português",  "path": "packs/pt.json" },
-    { "code": "sv",      "name": "Svenska",    "path": "packs/sv.json" },
-    { "code": "ja",      "name": "日本語",       "path": "packs/ja.json" },
-    { "code": "zh-Hans", "name": "简体中文",     "path": "packs/zh-Hans.json" },
-    { "code": "zh-Hant", "name": "繁體中文",     "path": "packs/zh-Hant.json" }
+    {
+      "code": "da",
+      "name": "Dansk",
+      "path": "packs/da.json"
+    },
+    {
+      "code": "de",
+      "name": "Deutsch",
+      "path": "packs/de.json"
+    },
+    {
+      "code": "es",
+      "name": "Español",
+      "path": "packs/es.json"
+    },
+    {
+      "code": "fr",
+      "name": "Français",
+      "path": "packs/fr.json"
+    },
+    {
+      "code": "hu",
+      "name": "Magyar",
+      "path": "packs/hu.json"
+    },
+    {
+      "code": "ja",
+      "name": "日本語",
+      "path": "packs/ja.json"
+    },
+    {
+      "code": "nl",
+      "name": "Nederlands",
+      "path": "packs/nl.json"
+    },
+    {
+      "code": "pt",
+      "name": "Português",
+      "path": "packs/pt.json"
+    },
+    {
+      "code": "sv",
+      "name": "Svenska",
+      "path": "packs/sv.json"
+    },
+    {
+      "code": "zh-Hans",
+      "name": "简体中文",
+      "path": "packs/zh-Hans.json"
+    },
+    {
+      "code": "zh-Hant",
+      "name": "繁體中文",
+      "path": "packs/zh-Hant.json"
+    }
   ]
 }
